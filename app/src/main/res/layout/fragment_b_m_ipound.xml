@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BMIpoundFragment"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edBMIwtpd"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edittextdesign"
+        android:hint="WEIGHT (in pounds) "
+        android:layout_marginBottom="25dp"
+        android:padding="5dp"
+        android:layout_margin="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:inputType="numberDecimal"
+        android:id="@+id/edBMIhtpd"
+        android:hint="HEIGHT (in inches) "
+        android:background="@drawable/edittextdesign"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/LLshowBMIpd"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YOUR BMI"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="24.6"
+            android:id="@+id/txtBMIpd"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:id="@+id/txtconditionpd"
+            android:textAlignment="center"
+
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtmessagepd"
+            android:text="Congratulation! You Are In Good Shape!"
+            android:textAlignment="center"
+
+            android:textSize="15sp"/>
+
+
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textSize="25sp"
+        android:id="@+id/btnCalBMIpd"
+        android:layout_margin="15dp"
+        />
+
+
+
+</LinearLayout>
+
+
+
+
+

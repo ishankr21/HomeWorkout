@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExcersiseScreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:theme="@style/ToolbarTheme"
+        app:titleTextColor="@color/black"
+        app:title="Home Workout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/excersisePageToolBar"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/excersisePageToolBar"
+       android:orientation="vertical"
+        android:id="@+id/llintital"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Ready For..."
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/timer"
+        android:backgroundTint="@color/purple_500"
+        android:layout_width="150dp"
+        android:gravity="center"
+        android:layout_height="150dp"
+        android:background="@drawable/roundbutton"
+
+        android:text="10"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumping Jacks"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:id="@+id/ExcerciseName"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/excersisePageToolBar"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/llexecercise"
+
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/excerciseImg"
+            android:src="@drawable/ic_jumping_jacks"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumping Jacks..."
+            android:textStyle="bold"
+            android:id="@+id/excersise_name"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/timerToDoExcercise"
+            android:backgroundTint="@color/purple_500"
+            android:layout_width="150dp"
+            android:gravity="center"
+            android:layout_height="150dp"
+            android:background="@drawable/roundbutton"
+            android:text="30"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/count"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/b1"
+            android:layout_margin="2dp"
+            android:background="@drawable/roundbtnselected"
+            />
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/b2"
+            android:layout_margin="2dp"
+            android:background="@drawable/count"
+            />
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/b3"
+            android:layout_margin="2dp"
+            android:background="@drawable/count"
+            />
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/b4"
+            android:layout_margin="2dp"
+            android:background="@drawable/count"
+            />
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/b5"
+            android:layout_margin="2dp"
+            android:background="@drawable/count"
+            />
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/b6"
+            android:layout_margin="2dp"
+            android:background="@drawable/count"
+            />
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/b7"
+            android:layout_margin="2dp"
+            android:background="@drawable/count"
+            />
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/b8"
+            android:layout_margin="2dp"
+            android:background="@drawable/count"
+            />
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/b9"
+            android:layout_margin="2dp"
+            android:background="@drawable/count"
+            />
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/b10"
+            android:layout_margin="2dp"
+            android:background="@drawable/count"
+            />
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/b11"
+            android:layout_margin="2dp"
+            android:background="@drawable/count"
+            />
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/b12"
+            android:layout_margin="2dp"
+            android:background="@drawable/count"
+            />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

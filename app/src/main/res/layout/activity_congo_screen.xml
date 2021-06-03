@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CongoScreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/ToolbarTheme"
+        app:titleTextColor="@color/black"
+        app:title="Congratulations"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/CongoPageToolBar"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/sv"
+        android:layout_margin="15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:text="Congratulations!!! For successfully completing excercise..."/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Calander"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:id="@+id/checkCalander"
+        />
+
+
+</LinearLayout>
